@@ -26,7 +26,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(320, 320);
+  createCanvas(240, 240);
   // Create the video
  var constraints = {
 
@@ -51,7 +51,7 @@ function setup() {
   };
 
   video = createCapture(constraints);
-  video.size(320, 320);
+  video.size(240, 240);
   video.hide();
 
   flippedVideo = ml5.flipImage(video)
